@@ -7,4 +7,5 @@ class AppColors {
   static const Color brownRosy =  Color(0xFFdcbeb6);
   static const Color orangeDark =  Color(0xFF4b4544);
   static const Color beige =  Color(0xFFfaf0e6);
+  static const Color terracotta =  Color(0xFFcc7861);
 }

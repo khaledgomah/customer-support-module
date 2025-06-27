@@ -1,12 +1,14 @@
 import 'package:customer_support_module/core/constants/app_colors.dart';
 import 'package:customer_support_module/core/constants/app_fonts.dart';
+import 'package:customer_support_module/core/constants/app_values.dart';
 import 'package:flutter/material.dart';
 
 class AppTheme {
   static ThemeData lightTheme = ThemeData(
     //divider
     dividerTheme: const DividerThemeData(color: AppColors.salmon, space: 32),
-
+    dividerColor: AppColors.salmon,
+    
     //scaffold
     scaffoldBackgroundColor: AppColors.white,
 
@@ -55,8 +57,9 @@ class AppTheme {
         backgroundColor: AppColors.beige,
         foregroundColor: AppColors.brownRosy,
         textStyle: const TextStyle(fontSize: FontSize.s16),
-        padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 12),
-        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8)),
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(AppSize.s32),
+        ),
       ),
     ),
 
