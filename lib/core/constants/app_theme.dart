@@ -8,12 +8,13 @@ class AppTheme {
     //divider
     dividerTheme: const DividerThemeData(color: AppColors.salmon, space: 32),
     dividerColor: AppColors.salmon,
-    
+
     //scaffold
     scaffoldBackgroundColor: AppColors.white,
 
     //appBar
     appBarTheme: const AppBarTheme(
+      scrolledUnderElevation: 0,
       centerTitle: true,
       titleTextStyle: TextStyle(
         fontSize: FontSize.s22,
@@ -37,7 +38,7 @@ class AppTheme {
         fontWeight: FontWeightManager.semiBold,
         color: AppColors.black,
       ),
-      
+
       titleLarge: TextStyle(
         fontSize: FontSize.s18,
         fontWeight: FontWeightManager.semiBold,

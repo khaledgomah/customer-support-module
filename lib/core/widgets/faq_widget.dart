@@ -43,7 +43,7 @@ class FAQWidget extends StatelessWidget {
                       ),
                     ),
           ),
-          const Divider(),
+          const Divider(height: 0),
           AnimatedSize(
             duration: const Duration(milliseconds: 300),
             curve: Curves.easeInOut,
@@ -69,10 +69,15 @@ class FAQWidget extends StatelessWidget {
                         ),
                         child: Column(
                           children: [
-                            Text(
-                              faq.answer,
-                              style: Theme.of(context).textTheme.bodySmall,
-                              textAlign: TextAlign.start,
+                            Padding(
+                              padding: const EdgeInsets.only(
+                                top: AppPadding.p12,
+                              ),
+                              child: Text(
+                                faq.answer,
+                                style: Theme.of(context).textTheme.bodySmall,
+                                textAlign: TextAlign.start,
+                              ),
                             ),
                           ],
                         ),

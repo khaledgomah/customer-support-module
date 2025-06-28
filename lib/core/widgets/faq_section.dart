@@ -58,7 +58,8 @@ class FAQSection extends StatelessWidget {
                 ),
                 SizedBox(height: AppSize.s16),
                 SearchBarWidget(onChanged: controller.onSearchChanged),
-                if (faqs.isNotEmpty) const Divider(),
+                SizedBox(height: AppSize.s16),
+                if (faqs.isNotEmpty) const Divider(height: 0),
                 for (int i = 0; i < faqs.length; i++) ...[
                   FAQWidget(faq: faqs[i]),
                 ],

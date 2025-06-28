@@ -14,7 +14,7 @@ class UserProfileView extends StatelessWidget {
       appBar: AppBar(title: const Text(AppStrings.userProfile)),
       body: Center(
         child: Obx(() {
-          controller.loadUser('khaled'); //user uniqe id get from auth
+          controller.loadUser();
           final user = controller.user.value;
           if (controller.isLoading.value) {
             return const CircularProgressIndicator();
