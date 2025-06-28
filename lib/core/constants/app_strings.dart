@@ -17,4 +17,28 @@ class AppStrings {
   static const String account = 'Account';
   static const String services = 'Services';
   static const String resetPassword = 'How do I reset my password?';
+
+  static const String customServiceEmail = 'support@example.com';
+  static const customServiceDescription =
+      'For any inquiries or support, please contact us at:';
+
+  static const String website = 'Website';
+  static const String websiteUrl = 'https://example.com';
+  static const String websiteDescription =
+      'Visit our website for more information.';
+
+  static const String facebook = 'Facebook';
+  static const String facebookUrl = 'https://www.facebook.com/khaled.gomah.73';
+  static const String facebookDescription =
+      'Follow us on Facebook for the latest updates.';
+
+  static const String instagram = 'Instagram';
+  static const String instagramUrl = 'https://www.instagram.com';
+  static const String instagramDescription =
+      'Follow us on Instagram for photos and stories.';
+
+  static const String whatsapp = 'WhatsApp';
+  static const String whatsappPhone = '01062183637';
+  static const String whatsappDescription =
+      'Chat with us on WhatsApp for quick support.';
 }

@@ -1,4 +1,4 @@
-import 'dart:ui';
+import 'package:flutter/material.dart';
 
 class AppColors {
   static const Color white =  Color(0xFFFFFFFF);
@@ -8,4 +8,5 @@ class AppColors {
   static const Color orangeDark =  Color(0xFF4b4544);
   static const Color beige =  Color(0xFFfaf0e6);
   static const Color terracotta =  Color(0xFFcc7861);
+  static const Color transparent =  Colors.transparent;
 }

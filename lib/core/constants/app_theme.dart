@@ -37,6 +37,7 @@ class AppTheme {
         fontWeight: FontWeightManager.semiBold,
         color: AppColors.black,
       ),
+      
       titleLarge: TextStyle(
         fontSize: FontSize.s18,
         fontWeight: FontWeightManager.semiBold,
@@ -48,7 +49,8 @@ class AppTheme {
         fontSize: FontSize.s18,
         color: Colors.black,
       ),
-      bodyMedium: TextStyle(fontSize: FontSize.s12, color: AppColors.black),
+      bodyMedium: TextStyle(fontSize: FontSize.s16, color: AppColors.black),
+      bodySmall: TextStyle(fontSize: FontSize.s12, color: AppColors.black),
     ),
 
     //buttons

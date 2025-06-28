@@ -22,13 +22,16 @@ class FAQWidget extends StatelessWidget {
             contentPadding: EdgeInsets.zero,
             title: Text(
               faq.question,
-              style: Theme.of(context).textTheme.titleLarge,
+              style: Theme.of(
+                context,
+              ).textTheme.headlineMedium?.copyWith(color: AppColors.salmon),
             ),
             trailing:
                 _isExpanded.value
                     ? IconButton(
                       icon: Icon(
                         Icons.expand_more_outlined,
+                        size: AppSize.s32,
                         color: AppColors.black,
                       ),
                       onPressed: () => _isExpanded.toggle(),
@@ -68,7 +71,7 @@ class FAQWidget extends StatelessWidget {
                           children: [
                             Text(
                               faq.answer,
-                              style: Theme.of(context).textTheme.bodyMedium,
+                              style: Theme.of(context).textTheme.bodySmall,
                               textAlign: TextAlign.start,
                             ),
                           ],
@@ -77,6 +80,7 @@ class FAQWidget extends StatelessWidget {
                     )
                     : const SizedBox.shrink(),
           ),
+          _isExpanded.value ? Divider() : SizedBox(),
         ],
       );
     });

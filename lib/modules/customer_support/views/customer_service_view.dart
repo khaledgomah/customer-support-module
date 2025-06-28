@@ -25,14 +25,14 @@ class CustomerServiceView extends StatelessWidget {
             Divider(),
             Text(
               AppStrings.lorem,
-              style: Theme.of(context).textTheme.bodyMedium,
+              style: Theme.of(context).textTheme.bodySmall,
             ),
             Divider(),
             ListTile(
               title: Text(AppStrings.offerHelp),
               subtitle: Text(
                 AppStrings.support,
-                style: Theme.of(context).textTheme.bodyMedium,
+                style: Theme.of(context).textTheme.bodySmall,
               ),
               trailing: CustomGoForwardButton(onPressed:() =>  Get.toNamed(AppRoutes.assistant)),
             ),

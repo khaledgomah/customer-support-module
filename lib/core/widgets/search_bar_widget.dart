@@ -13,6 +13,9 @@ class SearchBarWidget extends StatelessWidget {
       onChanged: onChanged,
       decoration: InputDecoration(
         hintText: 'Search',
+        hintStyle: Theme.of(
+          context,
+        ).textTheme.bodySmall?.copyWith(color: AppColors.beige),
         suffixIcon: Padding(
           padding: const EdgeInsets.all(AppSize.s4),
           child: CircleAvatar(
