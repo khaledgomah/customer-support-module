@@ -1,5 +1,12 @@
 class AppStrings {
   static const String customerServiceTitle = 'Customer Service';
+  static const String callCenter = 'Call Center';
+  static const String cancel = 'Cancel';
+  static const String error = 'Error';
+  static const String callError = 'Cannot launch dialer';
+  static const String changePassword = 'Change Password';
+  static const String changePasswordResponse = 'You will receive an email to change your password.';
+  static const String balance = 'Know Current Balance';
   static const String helpFaqTitle = 'Help & FAQ';
   static const String customServiceTitle = 'Custom Service';
   static const String customServiceWelcome = "Hello! I'm Here to Assist you";
@@ -10,6 +17,7 @@ class AppStrings {
   static const String contactUsTitle = 'Contact Us';
   static const String assistant = 'Assistant';
   static const String offerHelp = 'How can we help you?';
+  static const String currentBalance = 'Your current balance is EGP';
   static const String helpCenter = 'Help Center';
   static const String support = 'Support';
   static const String generalInformation = 'General Information';

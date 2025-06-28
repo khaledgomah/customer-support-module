@@ -54,6 +54,13 @@ class CustomerServiceView extends GetView<CustomerServiceController> {
                   onPressed: () => controller.goToFaq(),
                 ),
               ),
+              Divider(),
+              ListTile(
+                title: const Text(AppStrings.callCenter),
+                trailing: CustomGoForwardButton(
+                  onPressed: controller.showSupportOptionsDialog,
+                ),
+              ),
             ],
           ),
         ),
