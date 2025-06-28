@@ -76,7 +76,6 @@ lib/
 | GetX              | State management, routing, DI     |
 | Firebase Firestore| Real-time database                |
 | url_launcher      | Open external apps (phone, email) |
-| postimg           | Save image online                 |
 
 ---
 
@@ -102,7 +101,6 @@ flutter run
 ![Screenshot_1751116764](https://github.com/user-attachments/assets/899f70e2-93eb-4437-a92b-297581db1941)
 ![Screenshot_1751116788](https://github.com/user-attachments/assets/dafb9f5a-80bd-49bc-aac5-174f05ea1c54)
 
-|
 
 ---
 
