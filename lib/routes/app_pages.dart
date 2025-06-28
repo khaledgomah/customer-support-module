@@ -1,6 +1,8 @@
 import 'package:customer_support_module/modules/customer_support/bindings/help_faq_binding.dart';
+import 'package:customer_support_module/modules/customer_support/bindings/user_binding.dart';
 import 'package:customer_support_module/modules/customer_support/views/customer_service_view.dart';
 import 'package:customer_support_module/modules/customer_support/views/help_faq_view.dart';
+import 'package:customer_support_module/modules/customer_support/views/user_profile_view.dart';
 import 'package:get/get.dart';
 import 'app_routes.dart';
 
@@ -15,6 +17,11 @@ class AppPages {
       name: AppRoutes.helpFaq,
       page: () => const HelpFaqView(),
       binding: HelpFaqBinding(),
+    ),
+        GetPage(
+      name: AppRoutes.user,
+      page: () => const UserProfileView(),
+      binding: UserBinding(),
     ),
     // GetPage(
     //   name: AppRoutes.assistant,

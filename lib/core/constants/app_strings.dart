@@ -17,6 +17,8 @@ class AppStrings {
   static const String account = 'Account';
   static const String services = 'Services';
   static const String resetPassword = 'How do I reset my password?';
+  static const String userProfile = 'User Profile';
+  static const String noUserDataAvailable = 'No user data available.';
 
   static const String customServiceEmail = 'support@example.com';
   static const customServiceDescription =

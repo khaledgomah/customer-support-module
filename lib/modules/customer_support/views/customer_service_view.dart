@@ -12,7 +12,15 @@ class CustomerServiceView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text(AppStrings.customerServiceTitle)),
+      appBar: AppBar(
+        title: const Text(AppStrings.customerServiceTitle),
+        actions: [
+          IconButton(
+            onPressed: () => Get.toNamed(AppRoutes.user),
+            icon: Icon(Icons.person),
+          ),
+        ],
+      ),
       body: Padding(
         padding: const EdgeInsets.all(AppPadding.p28),
         child: Column(
@@ -34,13 +42,17 @@ class CustomerServiceView extends StatelessWidget {
                 AppStrings.support,
                 style: Theme.of(context).textTheme.bodySmall,
               ),
-              trailing: CustomGoForwardButton(onPressed:() =>  Get.toNamed(AppRoutes.assistant)),
+              trailing: CustomGoForwardButton(
+                onPressed: () => Get.toNamed(AppRoutes.assistant),
+              ),
             ),
             Divider(),
             ListTile(
               title: Text(AppStrings.helpCenter),
               subtitle: Text(AppStrings.generalInformation),
-              trailing: CustomGoForwardButton(onPressed:() =>  Get.toNamed(AppRoutes.helpFaq)),
+              trailing: CustomGoForwardButton(
+                onPressed: () => Get.toNamed(AppRoutes.helpFaq),
+              ),
             ),
           ],
         ),
