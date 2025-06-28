@@ -3,6 +3,8 @@ class AppStrings {
   static const String callCenter = 'Call Center';
   static const String cancel = 'Cancel';
   static const String error = 'Error';
+  static const String sendMessageError = 'Failed to send message';
+  static const String loadingMessageError = 'Failed to load messages';
   static const String callError = 'Cannot launch dialer';
   static const String changePassword = 'Change Password';
   static const String changePasswordResponse = 'You will receive an email to change your password.';

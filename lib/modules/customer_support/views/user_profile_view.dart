@@ -20,7 +20,7 @@ class UserProfileView extends StatelessWidget {
             return const CircularProgressIndicator();
           }
           if (user == null) {
-            return const Text(AppStrings.noUserDataAvailable);
+            return Center(child: const Text(AppStrings.noUserDataAvailable));
           }
           return Column(
             mainAxisAlignment: MainAxisAlignment.center,
