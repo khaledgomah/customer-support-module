@@ -1,3 +1,4 @@
+import 'package:customer_support_module/core/constants/app_colors.dart';
 import 'package:customer_support_module/core/constants/app_strings.dart';
 import 'package:customer_support_module/core/constants/app_values.dart';
 import 'package:customer_support_module/core/widgets/custom_go_forward_button.dart';
@@ -14,9 +15,12 @@ class CustomerServiceView extends GetView<CustomerServiceController> {
       appBar: AppBar(
         title: const Text(AppStrings.customerServiceTitle),
         actions: [
-          IconButton(
-            onPressed: () => controller.goToProfile(),
-            icon: Icon(Icons.person),
+          Padding(
+            padding: EdgeInsets.only(right: AppPadding.p12),
+            child: IconButton(
+              onPressed: () => controller.goToProfile(),
+              icon: Icon(Icons.person, color: AppColors.salmon),
+            ),
           ),
         ],
       ),
