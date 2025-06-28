@@ -47,7 +47,7 @@ class CustomerServiceView extends GetView<CustomerServiceController> {
                   style: Theme.of(context).textTheme.bodySmall,
                 ),
                 trailing: CustomGoForwardButton(
-                  onPressed: () => controller.goToFaq(),
+                  onPressed: () => controller.goToChat(),
                 ),
               ),
               Divider(),
